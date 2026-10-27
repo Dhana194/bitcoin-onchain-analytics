@@ -29,6 +29,10 @@ The analysis focuses on selected Bitcoin network metrics. Query logic, metric de
 
 Interactive dashboard: [Market Panic vs Network Reality (BTC)](https://dune.com/dhana24687890/btc-onchain-stress-drawdowns)
 
+## Research
+
+Read the full research report, including methodology, key observations, interpretation, and limitations: [Bitcoin — Does the Network Really Panic?](research.md)
+
 ## Key Findings
 
 *To be completed after reviewing the dashboard and validating the results.*
