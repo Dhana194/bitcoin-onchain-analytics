@@ -19,6 +19,32 @@ The goal is to investigate blockchain metrics, identify trends over time, and tr
 - SQL
 - Data Visualization
 
+## Technical Implementation
+
+The dashboard is powered by SQL queries developed in Dune Analytics.
+
+The main query combines Bitcoin price data with on-chain activity metrics to produce a daily dataset covering a rolling 180-day window.
+
+The analysis includes:
+
+- Daily transaction count
+- Total output value converted to USD
+- Average transaction size in USD
+- Large transactions with at least one output of 10 BTC or more
+- Whale transaction share proxy
+- Average transaction fees in USD
+- Daily Bitcoin price in USD
+
+### SQL Files
+
+- [`bitcoin_price.sql`](sql/bitcoin_price.sql): retrieves Bitcoin price observations.
+- [`bitcoin_onchain_metrics.sql`](sql/bitcoin_onchain_metrics.sql): combines price data, transaction activity, output values, large transaction indicators, and transaction fees.
+
+### Technical Notes
+
+The metrics are descriptive indicators of on-chain activity. They should not be interpreted as direct measures of unique users, investor identities, or the complete volume of cryptocurrency trading.
+
+The whale transaction share is a proxy based on transactions containing at least one output of 10 BTC or more.
 ## Methodology
 
 The project uses on-chain data available through Dune Analytics.
